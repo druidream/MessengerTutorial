@@ -9,9 +9,22 @@ import Firebase
 
 class AuthService {
 
+    static let shared = AuthService()
+
+    @Published var userSession: FirebaseAuth.User?
+
+    init() {
+        self.userSession = Auth.auth().currentUser
+        print("DEBUG: User session id is \(userSession?.uid)")
+    }
+
     func login(withEmail email: String, password: String) async throws {
-        print("DEBUG: Email is \(email)")
-        print("DEBUG: Password is \(password)")
+        do {
+            let result = try await Auth.auth().signIn(withEmail: email, password: password)
+            self.userSession = result.user
+        } catch {
+            print("DEBUG: Failed to sign in ")
+        }
     }
 
     func createUser(withEmail email: String, password: String, fullname: String) async throws {
@@ -20,6 +33,15 @@ class AuthService {
             print("DEBUG: Create user \(result.user.uid)")
         } catch {
             print("DEBUG: Failed to create user with error: \(error.localizedDescription)")
+        }
+    }
+
+    func signOut() {
+        do {
+            try Auth.auth().signOut()
+            self.userSession = nil
+        } catch {
+            print("DEBUG: Failed to sign out with error \(error.localizedDescription)")
         }
     }
 }

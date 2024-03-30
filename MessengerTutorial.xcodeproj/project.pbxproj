@@ -33,6 +33,7 @@
 		BF5877DB2BB7FA4900988AE5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877DA2BB7FA4900988AE5 /* LoginViewModel.swift */; };
 		BF5877DD2BB7FA6400988AE5 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877DC2BB7FA6400988AE5 /* RegistrationViewModel.swift */; };
 		BF5877DF2BB7FA7D00988AE5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877DE2BB7FA7D00988AE5 /* AuthService.swift */; };
+		BF5877E32BB7FFDF00988AE5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877E22BB7FFDF00988AE5 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		BF5877DA2BB7FA4900988AE5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		BF5877DC2BB7FA6400988AE5 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		BF5877DE2BB7FA7D00988AE5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		BF5877E22BB7FFDF00988AE5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +175,8 @@
 		BF5877A72BB6C09800988AE5 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				BF5877952BB6C05900988AE5 /* ContentView.swift */,
+				BF5877E12BB7FFCD00988AE5 /* View */,
+				BF5877E02BB7FFCC00988AE5 /* ViewModel */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -273,6 +276,22 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		BF5877E02BB7FFCC00988AE5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF5877E22BB7FFDF00988AE5 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF5877E12BB7FFCD00988AE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF5877952BB6C05900988AE5 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,6 +376,7 @@
 				BF5877DD2BB7FA6400988AE5 /* RegistrationViewModel.swift in Sources */,
 				BF5877BC2BB6FBBE00988AE5 /* ProfileView.swift in Sources */,
 				BF5877B72BB6F86300988AE5 /* NewMessageView.swift in Sources */,
+				BF5877E32BB7FFDF00988AE5 /* ContentViewModel.swift in Sources */,
 				BF5877AA2BB6C0AC00988AE5 /* LoginView.swift in Sources */,
 				BF5877C82BB7A51D00988AE5 /* ChatView.swift in Sources */,
 				BF5877DF2BB7FA7D00988AE5 /* AuthService.swift in Sources */,
