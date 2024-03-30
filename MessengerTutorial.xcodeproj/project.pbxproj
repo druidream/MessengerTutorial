@@ -20,6 +20,7 @@
 		BF5877BC2BB6FBBE00988AE5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877BB2BB6FBBE00988AE5 /* ProfileView.swift */; };
 		BF5877BE2BB6FCA700988AE5 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877BD2BB6FCA700988AE5 /* SettingsOptionsViewModel.swift */; };
 		BF5877C02BB79DE800988AE5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877BF2BB79DE800988AE5 /* ProfileViewModel.swift */; };
+		BF5877C22BB7A02400988AE5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877C12BB7A02400988AE5 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		BF5877BB2BB6FBBE00988AE5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BF5877BD2BB6FCA700988AE5 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		BF5877BF2BB79DE800988AE5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		BF5877C12BB7A02400988AE5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		BF5877A22BB6C08000988AE5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF5877C12BB7A02400988AE5 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				BF5877AF2BB6F3DA00988AE5 /* InboxView.swift in Sources */,
 				BF5877B22BB6F48800988AE5 /* ActiveNowView.swift in Sources */,
 				BF5877C02BB79DE800988AE5 /* ProfileViewModel.swift in Sources */,
+				BF5877C22BB7A02400988AE5 /* User.swift in Sources */,
 				BF5877942BB6C05900988AE5 /* MessengerTutorialApp.swift in Sources */,
 				BF5877BE2BB6FCA700988AE5 /* SettingsOptionsViewModel.swift in Sources */,
 				BF5877AC2BB6EE3500988AE5 /* RegistrationView.swift in Sources */,
