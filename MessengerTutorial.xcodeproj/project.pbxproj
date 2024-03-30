@@ -30,6 +30,9 @@
 		BF5877D32BB7F83F00988AE5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BF5877D22BB7F83F00988AE5 /* FirebaseFirestore */; };
 		BF5877D52BB7F83F00988AE5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF5877D42BB7F83F00988AE5 /* FirebaseFirestoreSwift */; };
 		BF5877D72BB7F83F00988AE5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BF5877D62BB7F83F00988AE5 /* FirebaseStorage */; };
+		BF5877DB2BB7FA4900988AE5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877DA2BB7FA4900988AE5 /* LoginViewModel.swift */; };
+		BF5877DD2BB7FA6400988AE5 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877DC2BB7FA6400988AE5 /* RegistrationViewModel.swift */; };
+		BF5877DF2BB7FA7D00988AE5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877DE2BB7FA7D00988AE5 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		BF5877C92BB7A6E200988AE5 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		BF5877CB2BB7A8D000988AE5 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		BF5877CD2BB7F7D000988AE5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF5877DA2BB7FA4900988AE5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BF5877DC2BB7FA6400988AE5 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		BF5877DE2BB7FA7D00988AE5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,8 @@
 		BF5877A62BB6C09300988AE5 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				BF5877D92BB7FA3600988AE5 /* Service */,
+				BF5877D82BB7FA3400988AE5 /* ViewModel */,
 				BF5877A82BB6C0A600988AE5 /* View */,
 			);
 			path = Authentication;
@@ -248,6 +256,23 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		BF5877D82BB7FA3400988AE5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF5877DA2BB7FA4900988AE5 /* LoginViewModel.swift */,
+				BF5877DC2BB7FA6400988AE5 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF5877D92BB7FA3600988AE5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF5877DE2BB7FA7D00988AE5 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,15 +354,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5877B42BB6F5DD00988AE5 /* InboxRowView.swift in Sources */,
+				BF5877DD2BB7FA6400988AE5 /* RegistrationViewModel.swift in Sources */,
 				BF5877BC2BB6FBBE00988AE5 /* ProfileView.swift in Sources */,
 				BF5877B72BB6F86300988AE5 /* NewMessageView.swift in Sources */,
 				BF5877AA2BB6C0AC00988AE5 /* LoginView.swift in Sources */,
 				BF5877C82BB7A51D00988AE5 /* ChatView.swift in Sources */,
+				BF5877DF2BB7FA7D00988AE5 /* AuthService.swift in Sources */,
 				BF5877962BB6C05900988AE5 /* ContentView.swift in Sources */,
 				BF5877CA2BB7A6E200988AE5 /* ChatMessageCell.swift in Sources */,
 				BF5877CC2BB7A8D100988AE5 /* ChatBubble.swift in Sources */,
 				BF5877C52BB7A32600988AE5 /* CircularProfileImageView.swift in Sources */,
 				BF5877AF2BB6F3DA00988AE5 /* InboxView.swift in Sources */,
+				BF5877DB2BB7FA4900988AE5 /* LoginViewModel.swift in Sources */,
 				BF5877B22BB6F48800988AE5 /* ActiveNowView.swift in Sources */,
 				BF5877C02BB79DE800988AE5 /* ProfileViewModel.swift in Sources */,
 				BF5877C22BB7A02400988AE5 /* User.swift in Sources */,
