@@ -19,6 +19,7 @@
 		BF5877B72BB6F86300988AE5 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877B62BB6F86300988AE5 /* NewMessageView.swift */; };
 		BF5877BC2BB6FBBE00988AE5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877BB2BB6FBBE00988AE5 /* ProfileView.swift */; };
 		BF5877BE2BB6FCA700988AE5 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877BD2BB6FCA700988AE5 /* SettingsOptionsViewModel.swift */; };
+		BF5877C02BB79DE800988AE5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877BF2BB79DE800988AE5 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		BF5877B62BB6F86300988AE5 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		BF5877BB2BB6FBBE00988AE5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BF5877BD2BB6FCA700988AE5 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
+		BF5877BF2BB79DE800988AE5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				BF5877BD2BB6FCA700988AE5 /* SettingsOptionsViewModel.swift */,
+				BF5877BF2BB79DE800988AE5 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				BF5877962BB6C05900988AE5 /* ContentView.swift in Sources */,
 				BF5877AF2BB6F3DA00988AE5 /* InboxView.swift in Sources */,
 				BF5877B22BB6F48800988AE5 /* ActiveNowView.swift in Sources */,
+				BF5877C02BB79DE800988AE5 /* ProfileViewModel.swift in Sources */,
 				BF5877942BB6C05900988AE5 /* MessengerTutorialApp.swift in Sources */,
 				BF5877BE2BB6FCA700988AE5 /* SettingsOptionsViewModel.swift in Sources */,
 				BF5877AC2BB6EE3500988AE5 /* RegistrationView.swift in Sources */,

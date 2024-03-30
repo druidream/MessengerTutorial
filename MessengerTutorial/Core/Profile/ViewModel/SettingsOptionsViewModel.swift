@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 enum SettingsOptionsViewModel: Int, CaseIterable, Identifiable {
     case darkMode
