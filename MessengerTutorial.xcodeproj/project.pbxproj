@@ -36,6 +36,7 @@
 		BF5877E32BB7FFDF00988AE5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877E22BB7FFDF00988AE5 /* ContentViewModel.swift */; };
 		BF5877E52BB807B200988AE5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877E42BB807B100988AE5 /* UserService.swift */; };
 		BF5877E92BB809E200988AE5 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877E82BB809E200988AE5 /* InboxViewModel.swift */; };
+		BF5877ED2BB8149B00988AE5 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5877EC2BB8149B00988AE5 /* NewMessageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		BF5877E22BB7FFDF00988AE5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		BF5877E42BB807B100988AE5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		BF5877E82BB809E200988AE5 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
+		BF5877EC2BB8149B00988AE5 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +217,8 @@
 		BF5877B52BB6F85700988AE5 /* NewMessage */ = {
 			isa = PBXGroup;
 			children = (
-				BF5877B62BB6F86300988AE5 /* NewMessageView.swift */,
+				BF5877EB2BB8147C00988AE5 /* View */,
+				BF5877EA2BB8147B00988AE5 /* ViewModel */,
 			);
 			path = NewMessage;
 			sourceTree = "<group>";
@@ -310,6 +313,22 @@
 			children = (
 				BF5877AE2BB6F3DA00988AE5 /* InboxView.swift */,
 				BF5877B32BB6F5DD00988AE5 /* InboxRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF5877EA2BB8147B00988AE5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF5877EC2BB8149B00988AE5 /* NewMessageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF5877EB2BB8147C00988AE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF5877B62BB6F86300988AE5 /* NewMessageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -409,6 +428,7 @@
 				BF5877C52BB7A32600988AE5 /* CircularProfileImageView.swift in Sources */,
 				BF5877AF2BB6F3DA00988AE5 /* InboxView.swift in Sources */,
 				BF5877DB2BB7FA4900988AE5 /* LoginViewModel.swift in Sources */,
+				BF5877ED2BB8149B00988AE5 /* NewMessageViewModel.swift in Sources */,
 				BF5877E52BB807B200988AE5 /* UserService.swift in Sources */,
 				BF5877B22BB6F48800988AE5 /* ActiveNowView.swift in Sources */,
 				BF5877C02BB79DE800988AE5 /* ProfileViewModel.swift in Sources */,

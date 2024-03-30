@@ -25,6 +25,7 @@ class AuthService {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
+            loadCurrentUserData()
         } catch {
             print("DEBUG: Failed to sign in ")
         }
@@ -36,6 +37,7 @@ class AuthService {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
             try await self.uploadUserDate(email: email, fullname: fullname, id: result.user.uid)
+            loadCurrentUserData()
         } catch {
             print("DEBUG: Failed to create user with error: \(error.localizedDescription)")
         }
@@ -45,6 +47,7 @@ class AuthService {
         do {
             try Auth.auth().signOut()
             self.userSession = nil
+            UserService.shared.currentUser = nil
         } catch {
             print("DEBUG: Failed to sign out with error \(error.localizedDescription)")
         }
@@ -54,5 +57,9 @@ class AuthService {
         let user = User(fullname: fullname, email: email, profileImageUrl: nil)
         guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
         try await Firestore.firestore().collection("users").document(id).setData(encodedUser)
+    }
+
+    private func loadCurrentUserData() {
+        Task { try await UserService.shared.fetchCurrentUser() }
     }
 }
