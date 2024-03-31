@@ -43,6 +43,7 @@
 		BF67032D2BB95BA000337C15 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67032C2BB95BA000337C15 /* ChatService.swift */; };
 		BF6703302BB95C4900337C15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67032F2BB95C4900337C15 /* Constants.swift */; };
 		BF6703332BB95EB300337C15 /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6703322BB95EB300337C15 /* InboxService.swift */; };
+		BF6703352BB985D800337C15 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6703342BB985D800337C15 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		BF67032C2BB95BA000337C15 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		BF67032F2BB95C4900337C15 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BF6703322BB95EB300337C15 /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
+		BF6703342BB985D800337C15 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				BF5877A52BB6C08200988AE5 /* App */,
-				BF5877A42BB6C08200988AE5 /* Extensions */,
 				BF5877A32BB6C08100988AE5 /* Core */,
+				BF5877A42BB6C08200988AE5 /* Extensions */,
 				BF5877A22BB6C08000988AE5 /* Model */,
 				BF5877A12BB6C07F00988AE5 /* Service */,
 				BF67032E2BB95C3900337C15 /* Utils */,
@@ -172,6 +174,7 @@
 		BF5877A42BB6C08200988AE5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BF6703342BB985D800337C15 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF67032A2BB9527800337C15 /* ChatViewModel.swift in Sources */,
+				BF6703352BB985D800337C15 /* Date.swift in Sources */,
 				BF5877B42BB6F5DD00988AE5 /* InboxRowView.swift in Sources */,
 				BF5877E92BB809E200988AE5 /* InboxViewModel.swift in Sources */,
 				BF5877DD2BB7FA6400988AE5 /* RegistrationViewModel.swift in Sources */,
