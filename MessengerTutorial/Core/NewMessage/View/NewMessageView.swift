@@ -13,6 +13,8 @@ struct NewMessageView: View {
 
     @StateObject private var viewModel = NewMessageViewModel()
 
+    @Binding var selectUser: User?
+
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
@@ -45,6 +47,10 @@ struct NewMessageView: View {
                         Divider()
                             .padding(.leading, 40)
                     }
+                    .onTapGesture {
+                        selectUser = user
+                        dismiss()
+                    }
                 }
             }
             .navigationTitle("New Message")
@@ -63,6 +69,6 @@ struct NewMessageView: View {
 
 #Preview {
     NavigationStack {
-        NewMessageView()
+        NewMessageView(selectUser: .constant(User.MOCK_USER))
     }
 }
