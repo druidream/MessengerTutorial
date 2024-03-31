@@ -44,6 +44,8 @@
 		BF6703302BB95C4900337C15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67032F2BB95C4900337C15 /* Constants.swift */; };
 		BF6703332BB95EB300337C15 /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6703322BB95EB300337C15 /* InboxService.swift */; };
 		BF6703352BB985D800337C15 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6703342BB985D800337C15 /* Date.swift */; };
+		BF6703392BB987D200337C15 /* ActiveNowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6703382BB987D200337C15 /* ActiveNowViewModel.swift */; };
+		BF67033C2BB989E100337C15 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67033B2BB989E100337C15 /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +83,8 @@
 		BF67032F2BB95C4900337C15 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BF6703322BB95EB300337C15 /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
 		BF6703342BB985D800337C15 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		BF6703382BB987D200337C15 /* ActiveNowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowViewModel.swift; sourceTree = "<group>"; };
+		BF67033B2BB989E100337C15 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 				BF5877A32BB6C08100988AE5 /* Core */,
 				BF5877A42BB6C08200988AE5 /* Extensions */,
 				BF5877A22BB6C08000988AE5 /* Model */,
+				BF67033A2BB989DB00337C15 /* Routing */,
 				BF5877A12BB6C07F00988AE5 /* Service */,
 				BF67032E2BB95C3900337C15 /* Utils */,
 				BF5877CD2BB7F7D000988AE5 /* GoogleService-Info.plist */,
@@ -228,7 +233,8 @@
 		BF5877B02BB6F48000988AE5 /* ActiveNow */ = {
 			isa = PBXGroup;
 			children = (
-				BF5877B12BB6F48800988AE5 /* ActiveNowView.swift */,
+				BF6703372BB987C100337C15 /* View */,
+				BF6703362BB987C000337C15 /* ViewModel */,
 			);
 			path = ActiveNow;
 			sourceTree = "<group>";
@@ -394,6 +400,30 @@
 			path = InboxService;
 			sourceTree = "<group>";
 		};
+		BF6703362BB987C000337C15 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF6703382BB987D200337C15 /* ActiveNowViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF6703372BB987C100337C15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF5877B12BB6F48800988AE5 /* ActiveNowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF67033A2BB989DB00337C15 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				BF67033B2BB989E100337C15 /* Route.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -495,12 +525,14 @@
 				BF5877AF2BB6F3DA00988AE5 /* InboxView.swift in Sources */,
 				BF5877DB2BB7FA4900988AE5 /* LoginViewModel.swift in Sources */,
 				BF5877ED2BB8149B00988AE5 /* NewMessageViewModel.swift in Sources */,
+				BF67033C2BB989E100337C15 /* Route.swift in Sources */,
 				BF5877E52BB807B200988AE5 /* UserService.swift in Sources */,
 				BF5877B22BB6F48800988AE5 /* ActiveNowView.swift in Sources */,
 				BF5877C02BB79DE800988AE5 /* ProfileViewModel.swift in Sources */,
 				BF5877C22BB7A02400988AE5 /* User.swift in Sources */,
 				BF6703262BB9504800337C15 /* MessageService.swift in Sources */,
 				BF5877942BB6C05900988AE5 /* MessengerTutorialApp.swift in Sources */,
+				BF6703392BB987D200337C15 /* ActiveNowViewModel.swift in Sources */,
 				BF6703242BB948AF00337C15 /* Message.swift in Sources */,
 				BF5877BE2BB6FCA700988AE5 /* SettingsOptionsViewModel.swift in Sources */,
 				BF5877AC2BB6EE3500988AE5 /* RegistrationView.swift in Sources */,
