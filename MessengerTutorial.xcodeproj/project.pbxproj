@@ -42,6 +42,7 @@
 		BF67032A2BB9527800337C15 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6703292BB9527800337C15 /* ChatViewModel.swift */; };
 		BF67032D2BB95BA000337C15 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67032C2BB95BA000337C15 /* ChatService.swift */; };
 		BF6703302BB95C4900337C15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67032F2BB95C4900337C15 /* Constants.swift */; };
+		BF6703332BB95EB300337C15 /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6703322BB95EB300337C15 /* InboxService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		BF6703292BB9527800337C15 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		BF67032C2BB95BA000337C15 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		BF67032F2BB95C4900337C15 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF6703322BB95EB300337C15 /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 		BF5877AD2BB6F3CF00988AE5 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
+				BF6703312BB95E9A00337C15 /* InboxService */,
 				BF5877E72BB809C100988AE5 /* View */,
 				BF5877E62BB809BF00988AE5 /* ViewModel */,
 			);
@@ -380,6 +383,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		BF6703312BB95E9A00337C15 /* InboxService */ = {
+			isa = PBXGroup;
+			children = (
+				BF6703322BB95EB300337C15 /* InboxService.swift */,
+			);
+			path = InboxService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,6 +482,7 @@
 				BF5877C82BB7A51D00988AE5 /* ChatView.swift in Sources */,
 				BF5877DF2BB7FA7D00988AE5 /* AuthService.swift in Sources */,
 				BF5877962BB6C05900988AE5 /* ContentView.swift in Sources */,
+				BF6703332BB95EB300337C15 /* InboxService.swift in Sources */,
 				BF6703302BB95C4900337C15 /* Constants.swift in Sources */,
 				BF5877CA2BB7A6E200988AE5 /* ChatMessageCell.swift in Sources */,
 				BF5877CC2BB7A8D100988AE5 /* ChatBubble.swift in Sources */,
