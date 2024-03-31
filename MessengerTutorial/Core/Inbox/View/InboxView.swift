@@ -10,7 +10,7 @@ import SwiftUI
 struct InboxView: View {
     @State private var showNewMessageView = false
     @StateObject var viewModel = InboxViewModel()
-    @State private var selecteUser: User?
+    @State private var selectedUser: User?
     @State private var showChat = false
 
     private var user: User? {
@@ -30,19 +30,19 @@ struct InboxView: View {
                 .listStyle(PlainListStyle())
                 .frame(height: UIScreen.main.bounds.height - 120)
             }
-            .onChange(of: selecteUser, { oldValue, newValue in
+            .onChange(of: selectedUser, { oldValue, newValue in
                 showChat = newValue != nil
             })
             .navigationDestination(for: User.self, destination: { user in
                 ProfileView(user: user)
             })
             .navigationDestination(isPresented: $showChat, destination: {
-                if let user = selecteUser {
+                if let user = selectedUser {
                     ChatView(user: user)
                 }
             })
             .fullScreenCover(isPresented: $showNewMessageView, content: {
-                NewMessageView(selectUser: $selecteUser)
+                NewMessageView(selectUser: $selectedUser)
             })
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -60,6 +60,7 @@ struct InboxView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         showNewMessageView.toggle()
+                        selectedUser = nil
                     } label: {
                         Image(systemName: "square.and.pencil.circle.fill")
                             .resizable()
